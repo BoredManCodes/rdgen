@@ -1,5 +1,5 @@
 name: build RustDeskTempTopMostWindow
-
+runs-on: self-hosted
 on:
   workflow_call:
     inputs:
