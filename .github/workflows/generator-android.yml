@@ -1,5 +1,6 @@
 name: Custom Android Client Generator
 run-name: Custom Android Client Generator
+runs-on: self-hosted
 on: 
   workflow_dispatch:
     inputs:
