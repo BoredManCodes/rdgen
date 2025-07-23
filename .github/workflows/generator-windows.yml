@@ -1,5 +1,6 @@
 name: Custom Windows Client Generator
 run-name: Custom Windows Client Generator
+runs-on: self-hosted
 on: 
   workflow_dispatch:
     inputs:
