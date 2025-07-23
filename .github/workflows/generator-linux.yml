@@ -1,5 +1,6 @@
 name: Custom Linux Client Generator
 run-name: Custom Linux Client Generator
+runs-on: self-hosted
 on: 
   workflow_dispatch:
     inputs:
