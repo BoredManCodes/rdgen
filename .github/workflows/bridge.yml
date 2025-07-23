@@ -1,7 +1,6 @@
 # This yaml shares the build bridge steps with ci and nightly.
 name: Build flutter-rust-bridge
 # 2023-11-23 18:00:00+00:00
-runs-on: self-hosted
 on:
   workflow_call:
     inputs:
@@ -19,7 +18,7 @@ env:
 
 jobs:
   generate_bridge:
-    runs-on: ${{ matrix.job.os }}
+    runs-on: self-hosted
     strategy:
       fail-fast: false
       matrix:
