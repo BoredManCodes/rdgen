@@ -1,5 +1,5 @@
 name: update docker image
-
+runs-on: self-hosted
 on:
   push:
     branches:
