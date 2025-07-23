@@ -1,6 +1,5 @@
 name: Custom Android Client Generator
 run-name: Custom Android Client Generator
-runs-on: self-hosted
 on: 
   workflow_dispatch:
     inputs:
@@ -89,7 +88,7 @@ jobs:
   build-rustdesk-android:
     needs: [generate-bridge-linux]
     name: build rustdesk android apk ${{ matrix.job.target }}
-    runs-on: ${{ matrix.job.os }}
+    runs-on: self-hosted
     strategy:
       fail-fast: false
       matrix:
